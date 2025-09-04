@@ -1,0 +1,18 @@
+name: dolibarr_module_history
+id: ari:cloud:compass:29687d12-de2f-40ae-98eb-16a2337c6547:component/27fd418c-f0b4-477c-a1d3-a6f789c15241/61179c7f-5f4c-4ee0-a746-93cf5787a3db
+description: donne un historique plus poussé et complet pour un objet
+configVersion: 1
+typeId: LIBRARY
+ownerId: null
+fields:
+  tier: 4
+links:
+  - name: null
+    type: REPOSITORY
+    url: https://github.com/wus-technik/dolibarr_module_history
+relationships:
+  DEPENDS_ON: []
+labels:
+  - language:php
+  - source:github
+customFields: null
