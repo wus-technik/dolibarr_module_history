@@ -30,7 +30,7 @@ require_once __DIR__.'/../backport/v19/core/class/commonhookactions.class.php';
 class ActionsHistory extends \history\RetroCompatCommonHookActions
 {
 	/**
-	 * @var array Hook results. Propagated to $hookmanager->resArray for later reuse
+	 * @var array Hook results. 
 	 */
 	public $results = array();
 
@@ -70,7 +70,7 @@ class ActionsHistory extends \history\RetroCompatCommonHookActions
 
 			$history_old_object = clone $object;
 			
-			if($action == 'addline' && property_exists($object, "class_element_line")) $history_old_object = new $object->class_element_line($this->db);
+			if($action == 'addline' && property_exists($object, "class_element_line")) $history_old_object = new $object->class_element_line($object->db);
 			
 		  	if(getDolGlobalString('HISTORY_STOCK_FULL_OBJECT_ON_DELETE') && strpos($action,'delete')!==false) {
 
