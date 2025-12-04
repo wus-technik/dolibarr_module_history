@@ -33,6 +33,9 @@ include_once DOL_DOCUMENT_ROOT .'/core/modules/DolibarrModules.class.php';
  */
 class modHistory extends DolibarrModules
 {
+	public $special = 0;
+	public $dictionnaries = array();
+	public $menus = array();
 	/**
 	 *   Constructor. Define names, constants, directories, boxes, permissions
 	 *
