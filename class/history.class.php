@@ -10,6 +10,21 @@ class DeepHistory extends SeedObject {
 
 	public $table_element = 'history';
 
+	// Core fields mapped from $fields definition to avoid dynamic property creation notices
+	public $rowid;
+	public $fk_object;
+	public $fk_object_deleted = 0;
+	public $key_value1 = 0;
+	public $fk_user;
+	public $type_object;
+	public $type_action;
+	public $table_object;
+	public $object;
+	public $date_entry;
+	public $what_changed;
+	public $to_delete;
+	public $is_clone;
+
 	function __construct($db) {
 
     	$this->db = $db;
